@@ -1,4 +1,4 @@
-# Python Royal
+# Python Royal / Rambo Python
 
 [![Project management: uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 [![Code style & Static analysis: Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
@@ -9,117 +9,116 @@
 
 ## Description
 
-Support pour le workshop Python Royal du SnowCamp 2025.
+Sources for the EuroPython 2025 tutorial "Rambo Python".
 
-## Objectifs
+## Objectives
 
-Apprendre à faire du code Python stylé et robuste !
+Learn to write stylish and robust Python code! 
 
-Python a la réputation de ne pas être axé sur la qualité logicielle.
-C’était vrai il y a 20 ans, mais depuis de grands noms se sont bâtis sur ce langage :
-Instagram, Spotify, Reddit, Dropbox...
-Pour arriver à allier Fiabilité, Maintenabilité, Évolutivité et Sécurité (= la fameuse
-Qualité), il faut apprendre le fonctionnement du langage et de son écosystème.
+Python has a reputation for not being focused on software quality.
+This was true 20 years ago, but since then, big names have been built on this
+language: Instagram, Spotify, Reddit, Dropbox...
+To achieve reliability, maintainability, scalability, and security (= the famous
+Quality), you need to learn the language and its ecosystem. 
 
-Découvrons ensemble la structure d'un projet Python, les principes du langage à
-respecter, l'outillage à mettre en place et les pratiques à adopter pour travailler
-en Python avec une qualité industrielle.
+Let's discover together the structure of a Python project, the principles of the
+language to respect, the tools to set up, and the practices to adopt to work
+with Python with industrial quality.
 
-## Prérequis
+## Prerequis
 
-- avoir les bases en Python
-- pouvoir installer des logiciels sur sa machine (accès réseau et droits)
-- un shell
-- si possible un compte GitLab ou GitHub
+* Have the basics in Python
+* Be able to install software on your machine (network access and rights)
+* A shell
+* If possible, a GitLab or GitHub account 
 
-## Déroulement
+## Procedure
 
-Il y a des fichiers de détecteur de rayon X/gamma sur ce repo, affichons-les !
+There are files for detecting X/gamma rays in this repository, let's display them!
 
-- [ ] Forker le projet [GitLab](https://gitlab.com/jgaffiot1/python-royal)
-      ou [GitHub](https://github.com/Lenormju/python-royal) sur son compte perso
-- [ ] Cloner le fork sur sa machine perso
-- [ ] Installer uv
-- [ ] Initier un nouveau projet avec uv
-- [ ] Remplir le `pyproject.toml`
-- [ ] Ajouter une dépendance : [Streamlit](https://streamlit.io/)
-- [ ] Afficher le hello world Streamlit
-- [ ] Ajouter de nouvelles dépendances : pandas et plotly
-- [ ] Charger un fichier et afficher la courbe avec Streamlit
+- [ ] Fork the [GitLab project](https://gitlab.com/jgaffiot1/python-royal)
+      or [GitHub project](https://github.com/Lenormju/python-royal) with your account
+- [ ] Clone the fork on your own computer
+- [ ] [Install `uv`](https://docs.astral.sh/uv/getting-started/installation/)
+- [ ] Initialize a new project with `uv`
+- [ ] Fill the `pyproject.toml`
+- [ ] Add a dependency : [streamlit](https://streamlit.io/)
+- [ ] Display the Streamlit "hello world"
+- [ ] Add new dependencies : `pandas` and `plotly`
+- [ ] Load a file and display its curve with Streamlit
 
-Et maintenant, un peu d'outillage.
+And now, some tooling.
 
-- [ ] Installer ruff, mypy et pytest en dépendance de dev
-- [ ] Formatter son code avec ruff
-- [ ] Analyser son code avec ruff
-- [ ] Vérifier les types avec mypy
-- [ ] Écrire un test avec pytest
-- [ ] Intégrer ces pratiques dans son workflow avec son IDE
+- [ ] Install `ruff`, `mypy`, and `pytest` as "dev" dependencies
+- [ ] Format your code with `ruff`
+- [ ] Analyze your code with `ruff`
+- [ ] Check types with `mypy`
+- [ ] Write a test with `pytest`
+- [ ] Integrate these practices into your workflow with your IDE
 
-Publions ce code.
+Let's publish this code.
 
-- [ ] Créer une release et son tag sur Git(Hub|Lab)
-- [ ] Créer un paquet (formats sdist et wheel) avec uv
-- [ ] Intégrer le tag dans le paquet avec versioningit
-- [ ] Publier ce code sur le package registry de Git(Hub|Lab)
-- [ ] (en option, construire une image Docker contenant le code et la publier)
+- [ ] Create a release and its tag on Git(Hub|Lab)
+- [ ] Create a package (in "sdist" and "wheel" formats) with `uv`
+- [ ] Integrate the tag into the package with `versioningit`
+- [ ] Publish this code on the Git(Hub|Lab) package registry
+- [ ] (Optional, build a Docker image containing the code and publish it)
 
-Automatisons un peu tout ça.
+Let's automate some of this.
 
-- [ ] Vérifier le code avant de commiter avec pre-commit
-- [ ] Uniformiser le workflow avec Doit (voire Make)
-- [ ] Lancer la vérification automatique avec GitLab CI / GitHub Actions
+- [ ] Check the code before committing with `pre-commit`
+- [ ] Standardize the workflow with `doit` (or `make`)
+- [ ] Launch automatic verification with GitLab CI / GitHub Actions
 
-Et quand même documentons.
+And anyway, let's document. 
 
-- [ ] Installer sphinx en dev
-- [ ] Construire la base de sa documentation
-- [ ] Extraire les docstrings et les intégrer avec apidoc
+- [ ] Install `sphinx` as dev dependencie
+- [ ] Build the base of the documentation
+- [ ] Extract docstrings and integrate them with `apidoc`
 
-Continuer l'application tant qu'on peut !
+Continue the application as long as we can!
 
-- [ ] Ajouter un champ pour charger un fichier de données
-- [ ] Extraire le temps d'acquisition et afficher les courbes en impact/s
-- [ ] Ajouter une page de recherche de pics sur les courbes
-- [ ] Étalonner les courbes en énergie à partir des courbes de références
-  (Na22, Cs137, Co60)
-- [ ] Refactoriser en séparant affichage, lecture de données, et traitement
-- [ ] Enregistrer les valeurs d'étalonnage dans l'état de l'application et les utiliser
-  pour toutes les courbes
-- [ ] Ajouter un champ optionnel pour charger un second fichier à soustraire au premier
-- [ ] Ajuster les couleurs, ajouter un logo (CSS en option)
+- [ ] Add a field to load a data file
+- [ ] Extract the acquisition time and display the curves in impact/s
+- [ ] Add a page to search for peaks on the curves
+- [ ] Calibrate the curves in energy from reference curves (Na22, Cs137, Co60)
+- [ ] Refactor by separating display, data reading, and processing
+- [ ] Record the calibration values in the application state and use them for all curves
+- [ ] Add an optional field to load a second file to subtract from the first
+- [ ] Adjust the colors, add a logo (CSS optional)
 
-## Données
+## Data
 
-Les données proviennent d'un capteur de rayonnement X et gamma (la version plus
-énergétique des X), utilisé pour mesurer la radioactivité résiduelle d'échantillons
-qu'on espère très purs, donc de très faibles radioactivités.
+The data comes from an X and gamma ray sensor (a more energetic version of
+X-rays), used to measure the residual radioactivity of samples that we hope are
+very pure, and therefore have very low radioactivity.
 
-Il fonctionne sur un principe proche des panneaux solaires, mais au lieu d'être exposé
-à une quantité astronomique de photons optiques, il ne reçoit qu'un photon X ou gamma
-de temps en temps. Le capteur ne donne donc pas un courant continu comme le panneau
-solaire, mais de petits pics quand par hasard un photon X ou gamma tape dedans.
-La hauteur du pic nous donne l'énergie du photon qui a impacté le capteur.
+It works on a principle similar to solar panels, but instead of being exposed
+to an astronomical amount of optical photons, it only receives an X or gamma
+photon from time to time. The sensor therefore does not produce a continuous
+current like a solar panel, but small peaks when an X or gamma photon happens
+to hit it.
 
-Sauf que le capteur enregistre ces hauteurs de façon très, très brute. Il se contente
-de compter les hauteurs sur une échelle allant de 1 à 16384. Ce ne sont même pas des
-volts ou une unité d'énergie, juste le nombre de canaux du convertisseur
-analogique/numérique, qui code les hauteurs sur 14 bits (16384=2^14).
-Comme le capteur ne fait que compter les impacts, il faut tenir compte manuellement
-du temps d'enregistrement pour savoir si l'échantillon était peu ou beaucoup radioactif
-(combien d'impact en 1 heure par exemple ?).
+However, the sensor records these heights in a very, very raw way. It simply
+counts the heights on a scale ranging from 1 to 16384. These are not even volts
+or a unit of energy, just the number of channels of the analog-to-digital
+converter, which encodes the heights on 14 bits (16384 = 2^14). Since the
+sensor only counts impacts, we need to manually take into account the recording
+time to know if the sample was slightly or very radioactive (how many impacts
+per hour, for example?).
 
-Pour retrouver l'échelle d'énergie, on place devant le capteur des éléments radioactifs
-connus, donc on connait l'énergie des pics (keV=une unité d'énergie) :
+To recover the energy scale, we place known radioactive elements in front of
+the sensor, so we know the energy of the peaks (keV = a unit of energy):
 
-- Cobalt 60 (Co60) : 2 pics à 1173.2 keV et 1332.5 keV
-- Sodium 22 (Na22) : 2 pics à 511 keV et 1274.5 keV
-- Césium 137 (CS137) : pic à 661.7 keV
+- Cobalt 60 (Co60) : 2 peaks at 1173.2 keV and 1332.5 keV
+- Sodium 22 (Na22) : 2 peaks à 511 keV and 1274.5 keV
+- Cesium 137 (CS137) : peak at 661.7 keV
 
-Enfin, les photons X ou gamma peuvent venir de l'échantillon ou de l'environnement, qui
-est toujours un peu radioactif. Pour en tenir compte, il faut soustraire à la mesure
-d'un échantillon la mesure de la radioactivité de l'environnement, qu'on appelle
-le bruit de fond (background en anglais). On a des mesures de deux échantillons :
-"pmt" et "steel", et deux bruits de fond : "bkg" et "bkg2".
+Finally, X or gamma photons can come from the sample or the environment, which
+is always slightly radioactive. To account for this, we need to subtract the
+measurement of the sample's radioactivity from the measurement of the
+environment's radioactivity, which we call the background noise. We have
+measurements of two samples: "pmt" and "steel", and two background
+noises: "bkg" and "bkg2".
 
-À vos claviers !
+To your keyboards!
